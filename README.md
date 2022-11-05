@@ -5,7 +5,7 @@
 
 This is part of a NLW - next level week, where we created cards showing information about the Football World Cup 2022 games.
 
-[🔗 Click here to access it](https://maykbrito.github.io/nlw-esports-explorer/)
+[🔗 Click here to access it](https://julianacostas.github.io/NLW-WorldCup2022Calendar-/)
 
 
 ## 🛠 Tecnologies
