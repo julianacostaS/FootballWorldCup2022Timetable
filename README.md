@@ -1,6 +1,5 @@
 # NLW Football World Cup 2022 Calendar
 
-![preview](./.github/preview.jpg)
 
 > Trilha Explorer
 
@@ -16,4 +15,5 @@ This is part of a NLW - next level week, where we created cards showing informat
 - JavaScript
 - Git e Github
 
-![icon=balearic islands](https://user-images.githubusercontent.com/49543157/200101765-3ecb1bfe-4051-4843-b191-befdadf76a80.svg)
+
+![preview](https://user-images.githubusercontent.com/49543157/200101831-90ea1dad-7072-45a6-a5ad-acd48c1c5ba4.jpg)
