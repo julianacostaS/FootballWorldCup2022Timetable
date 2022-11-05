@@ -1,0 +1,169 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@700;900&display=swap");
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --card-title-border-color: #746615;
+    --card-color-primary: #f7dd43;
+    --card-bg-color: #1d1c19;
+}
+
+ul {
+    list-style: none;
+}
+
+
+/* set different properties for bg color and borders using variables */
+
+
+/* body.blue {
+    --card-title-border-color: #338AF3;
+    --card-color-primary: #338AF3;
+    --card-bg-color: #202024;
+}
+
+body.green {
+    --card-title-border-color: #047C3F;
+    --card-color-primary: #047C3F;
+    --card-bg-color: #1a1f1b;
+} */
+
+body {
+    font-family: "Roboto", sans-serif;
+    background-color: #121214;
+    background-image: url(/assets/bg.svg);
+    background-position-x: center;
+    background-position-y: -715px;
+}
+
+#app {
+    width: fit-content;
+    margin: 52px auto;
+}
+
+header {
+    margin-bottom: 63px;
+    text-align: center;
+}
+
+#cards {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.card {
+    padding: 32px 23px;
+    text-align: center;
+    background: var(--card-bg-color);
+    border-bottom: 2px solid var(--card-color-primary);
+    border-radius: 6px;
+}
+
+.card h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    padding: 8px 16px;
+    border: 1px solid var(--card-title-border-color);
+    border-radius: 6px;
+    width: fit-content;
+    margin-inline: auto;
+    margin-bottom: 53px;
+    color: #f7dd43;
+}
+
+.card h2 span {
+    color: #e1e1e6;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.card ul li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card ul li strong {
+    font-weight: 900;
+    font-size: 30px;
+    line-height: 125%;
+    text-align: center;
+    color: #e1e1e6;
+}
+
+.card ul {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    width: 270px;
+}
+
+.card ul li+li {
+    padding-top: 24px;
+    border-top: 1px solid #e1e1e6;
+}
+
+
+/* set transition */
+
+.card h2:hover,
+.card ul li strong:hover,
+.card ul li img:hover {
+    transform: scale(1.1);
+}
+
+.card h2,
+.card ul li strong,
+.card ul li img {
+    transition: transform 0.3s;
+}
+
+
+/* set animations */
+
+.card {
+    animation: appear 0.2s;
+}
+
+
+/* set animation for each of the div cards individually using CSS, where nth-child(1) takes a single argument that describes a pattern for matching element indices in a list of siblings. */
+
+
+/* .card:nth-child(1) {
+    animation-delay: 1s;
+}
+
+.card:nth-child(2) {
+    animation-delay: 2s;
+}
+
+.card:nth-child(3) {
+    animation-delay: 3s;
+} */
+
+@keyframes appear {
+    0% {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+
+/* Media query Desktop - Flex-wrap:wrap - will force elements to break to the next line when the max-width is achieved.*/
+
+@media (min-width:700px) {
+    #cards {
+        max-width: 670px;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+}
