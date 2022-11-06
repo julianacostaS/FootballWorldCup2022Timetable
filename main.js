@@ -25,12 +25,37 @@ function createCard(date, day, games) {
 }
 document.querySelector("#cards").innerHTML =
     createCard(
+        "21/11",
+        "monday",
+        createGame("qatar", "03:00am", "ecuador")
+
+    ) +
+
+    createCard(
+        "22/11",
+        "tuesday",
+        createGame("england", "12:00am", "iran") +
+        createGame("senegal", "03:00am", "netherlands") +
+        createGame("usa", "06:00am", "wales") +
+        createGame("argentina", "09:00pm", "saudi arabia")
+    ) +
+
+    createCard(
         "23/11",
         "wednesday",
         createGame("denmark", "12:00am", "tunisia") +
         createGame("mexico", "03:00am", "poland") +
         createGame("france", "06:00am", "australia") +
         createGame("morocco", "09:00pm", "croatia")
+    ) +
+
+    createCard(
+        "24/11",
+        "thursday",
+        createGame("germany", "12:00am", "japan") +
+        createGame("spain", "03:00am", "costa rica") +
+        createGame("belgium", "06:00am", "canada") +
+        createGame("switzerland", "09:00pm", "cameroon")
     ) +
 
     createCard(
@@ -51,7 +76,6 @@ document.querySelector("#cards").innerHTML =
         createGame("tunisia", "09:00pm", "australia")
     ) +
 
-
     createCard(
         "27/11",
         "saturday",
@@ -59,6 +83,15 @@ document.querySelector("#cards").innerHTML =
         createGame("france", "03:00am", "denmark") +
         createGame("argentina", "06:00am", "mexico") +
         createGame("japan", "09:00pm", "costa rica")
+    ) +
+
+    createCard(
+        "28/11",
+        "sunday",
+        createGame("belgium", "12:00am", "morocco") +
+        createGame("croatia", "03:00am", "canada") +
+        createGame("spain", "06:00am", "germany") +
+        createGame("cameroon", "09:00pm", "serbia")
     ) +
 
     createCard(
@@ -70,6 +103,15 @@ document.querySelector("#cards").innerHTML =
     ) +
 
     createCard(
+        "30/11",
+        "wednesday",
+        createGame("ecuador", "02:00am", "senegal") +
+        createGame("netherlands", "02:00am", "qatar") +
+        createGame("iran", "06:00am", "usa") +
+        createGame("wales", "06:00am", "england")
+    ) +
+
+    createCard(
         "01/12",
         "thursday",
         createGame("tunisia", "02:00am", "france") +
@@ -78,6 +120,14 @@ document.querySelector("#cards").innerHTML =
         createGame("saudi arabia", "06:00am", "mexico")
     ) +
 
+    createCard(
+        "02/12",
+        "friday",
+        createGame("croatia", "02:00am", "belgium") +
+        createGame("canada", "02:00am", "morocco") +
+        createGame("japan", "06:00am", "spain") +
+        createGame("costa rica", "06:00am", "germany")
+    ) +
 
     createCard("03/12", "saturday",
         createGame("south korea", "02:00am", "portugal") +
