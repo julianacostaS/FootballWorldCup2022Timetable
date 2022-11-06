@@ -3,7 +3,7 @@
 
 > Trilha Explorer
 
-This is part of a NLW - next level week, where we created cards showing information about the Football World Cup 2022 games.
+This project is part of a NLW - next level week, created by Rocketseat where I developed cards showing information about the games of the Football World Cup 2022.
 
 [🔗 Click here to access it](https://julianacostas.github.io/NLW-WorldCup2022Calendar-/)
 
