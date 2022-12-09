@@ -1,4 +1,4 @@
-# Football World Cup 2022 Calendar
+# Football World Cup 2022 Timetable
 
 
 This project is part of a NLW - next level week, by Rocketseat. I developed this responsive application cards showing information about the games of the Football World Cup 2022.
